@@ -4,8 +4,12 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "launch": "node index.js",
-    "start": "npm run build && npm run launch"
+    "launch1": "node test1.js",
+    "launch2": "node test2.js",
+    "launch2": "node test3.js",
+    "start1": "npm run build && npm run launch1",
+    "start2": "npm run build && npm run launch2",
+    "start3": "npm run build && npm run launch3"
   },
   "license": "MIT",
   "dependencies": {

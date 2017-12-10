@@ -4,7 +4,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Run",
+      "name": "Run test: 1",
       "program": "${workspaceRoot}/index.ts",
       "outFiles": ["${workspaceRoot}/**/*.js"],
       "skipFiles": [
@@ -14,7 +14,24 @@
       // "stopOnEntry": true,
       // "smartStep": true,
       "preLaunchTask": "npm: build"
-      // "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run test: 2",
+      "program": "${workspaceRoot}/index.ts",
+      "outFiles": ["${workspaceRoot}/**/*.js"],
+      "skipFiles": ["<node_internals>/**/*.js"],
+      "preLaunchTask": "npm: build"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run test: 3",
+      "program": "${workspaceRoot}/index.ts",
+      "outFiles": ["${workspaceRoot}/**/*.js"],
+      "skipFiles": ["<node_internals>/**/*.js"],
+      "preLaunchTask": "npm: build"
     }
   ]
 }
