@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "launch": "node index.js",
+    "start": "npm run build && npm run launch"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^4.13.6",
+    "typegoose": "^3.7.0",
+    "typescript": "^2.6.2"
+  }
+}
